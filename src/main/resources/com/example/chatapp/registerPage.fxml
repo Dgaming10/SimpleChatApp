@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="450.0" prefWidth="600.0" style="-fx-background-color: #f5f5f5;" styleClass="register-page" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.chatapp.RegisterPage">
+   <children>
+      <Button fx:id="registerBtn" layoutX="274.0" layoutY="286.0" mnemonicParsing="false" onMouseClicked="#onRegisterClick" style="-fx-font-size: 14px; -fx-background-color: #4285f4;" styleClass="register-button" text="REGISTER" />
+      <TextField fx:id="usernameTxt" layoutX="226.0" layoutY="175.0" style="-fx-font-size: 14px; -fx-border-color: #dddddd;" styleClass="text-field" />
+      <PasswordField fx:id="passwordTxt" layoutX="226.0" layoutY="237.0" style="-fx-font-size: 14px; -fx-border-color: #dddddd;" styleClass="password-field" />
+      <Label layoutX="214.0" layoutY="37.0" styleClass="title-label" text="Register Page" textAlignment="CENTER">
+         <font>
+            <Font name="Candara Light" size="31.0" />
+         </font>
+      </Label>
+      <Label layoutX="226.0" layoutY="158.0" styleClass="label" text="Username" />
+      <Label layoutX="226.0" layoutY="220.0" styleClass="label" text="Password" />
+      <Hyperlink fx:id="loginLink" layoutX="211.0" layoutY="368.0" text="Already have an account? Login now." onMouseClicked="#onLoginLinkClick"/>
+   </children>
+</AnchorPane>

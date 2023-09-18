@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" onContextMenuRequested="#onChatClick" prefHeight="522.0" prefWidth="527.0" style="-fx-background-color: #f5f5f5;" styleClass="chat-page" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.chatapp.ChatPageController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+    <TextArea fx:id="txtArea" editable="false" prefHeight="284.0" prefWidth="487.0" styleClass="chat-text-area">
+        <font>
+            <Font size="14.0" />
+        </font>
+    </TextArea>
+
+    <HBox spacing="10">
+        <TextField fx:id="writeTextArea" promptText="Type your message..." style="-fx-background-color: #dddddd; -fx-font-size: 14px; -fx-padding: 8px 10px;" styleClass="message-input" HBox.hgrow="ALWAYS" />
+        <Button fx:id="sendBtn" mnemonicParsing="false" onAction="#onSendClick" style="-fx-background-color: #4285f4; -fx-padding: 7px 15px; -fx-font-size: 14px;" styleClass="send-button" text="Send" />
+    </HBox>
+
+    <HBox alignment="CENTER" spacing="10">
+        <Label text="Choose Group:" />
+        <ChoiceBox fx:id="groupChooser" prefWidth="150.0" styleClass="group-chooser" />
+        <Button fx:id="leaveBtn" mnemonicParsing="false" onAction="#onLeaveBtnClick" style="-fx-background-color: #e74c3c; -fx-font-size: 14px;" styleClass="leave-button" text="Leave Group" />
+    </HBox>
+</VBox>
